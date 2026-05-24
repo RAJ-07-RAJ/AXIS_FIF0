@@ -1,8 +1,32 @@
 
+# AXI4-Stream FIFO (SystemVerilog)
 
-# **AXI-Stream FIFO RTL**
+| | |
+|---|---|
+| **Type** | Bus interface · Stream buffering |
+| **Language** | SystemVerilog |
+| **Protocol** | AXI4-Stream (`TVALID`/`TREADY`, `TLAST`, `TKEEP`) |
+| **Tools** | Vivado · ModelSim · GTKWave |
+| **Related** | [AXI_STREAM](https://github.com/RAJ-07-RAJ/AXI_STREAM) (master/slave baseline) |
 
-## **Overview**
+---
+
+## Directory structure
+
+```
+AXIS_FIF0/
+├── RTL/axis_fifo.sv       # AXI-Stream FIFO core
+├── TB/axis_fifo_TB.sv     # Functional testbench
+└── README.md
+```
+
+## Simulation
+
+Add `RTL/axis_fifo.sv` and `TB/axis_fifo_TB.sv` to your simulator. Run with standard SV simulator (Vivado xsim, Questa, etc.).
+
+---
+
+## Overview
 
 This repository contains a **basic AXI4-Stream FIFO RTL implementation** intended to demonstrate **data buffering** between an AXI-Stream source and sink using the standard **TVALID/TREADY handshake**.
 
